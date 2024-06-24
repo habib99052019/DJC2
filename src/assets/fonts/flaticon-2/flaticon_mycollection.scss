@@ -1,0 +1,149 @@
+$flaticon_mycollection-font: "flaticon_mycollection";
+
+@font-face {
+    font-family: $flaticon_mycollection-font;
+    src: url("./flaticon_mycollection.ttf?42df3be1431b11bab4e8b5df502ce40d") format("truetype"),
+url("./flaticon_mycollection.woff?42df3be1431b11bab4e8b5df502ce40d") format("woff"),
+url("./flaticon_mycollection.woff2?42df3be1431b11bab4e8b5df502ce40d") format("woff2"),
+url("./flaticon_mycollection.eot?42df3be1431b11bab4e8b5df502ce40d#iefix") format("embedded-opentype"),
+url("./flaticon_mycollection.svg?42df3be1431b11bab4e8b5df502ce40d#flaticon_mycollection") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_mycollection !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_mycollection-map: (
+    "next": "\f101",
+    "right-arrow": "\f102",
+    "next-1": "\f103",
+    "left": "\f104",
+    "telephone": "\f105",
+    "mail": "\f106",
+    "envelope": "\f107",
+    "pin": "\f108",
+    "map": "\f109",
+    "location": "\f10a",
+    "telephone-1": "\f10b",
+    "smartphone": "\f10c",
+    "call": "\f10d",
+    "smartphone-1": "\f10e",
+    "angle-left": "\f10f",
+    "right-arrow-angle": "\f110",
+    "right-arrow-1": "\f111",
+    "right": "\f112",
+    "right-arrow-2": "\f113",
+    "arrow-button": "\f114",
+    "right-arrow-3": "\f115",
+    "left-quote": "\f116",
+    "left-quotes-sign": "\f117",
+    "quote": "\f118",
+    "quote-1": "\f119",
+    "quote-2": "\f11a",
+    "chat": "\f11b",
+    "chat-1": "\f11c",
+    "left-quote-1": "\f11d",
+    "quotes": "\f11e",
+    "quotation": "\f11f",
+);
+
+.flaticon-next:before {
+    content: map-get($flaticon_mycollection-map, "next");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon_mycollection-map, "right-arrow");
+}
+.flaticon-next-1:before {
+    content: map-get($flaticon_mycollection-map, "next-1");
+}
+.flaticon-left:before {
+    content: map-get($flaticon_mycollection-map, "left");
+}
+.flaticon-telephone:before {
+    content: map-get($flaticon_mycollection-map, "telephone");
+}
+.flaticon-mail:before {
+    content: map-get($flaticon_mycollection-map, "mail");
+}
+.flaticon-envelope:before {
+    content: map-get($flaticon_mycollection-map, "envelope");
+}
+.flaticon-pin:before {
+    content: map-get($flaticon_mycollection-map, "pin");
+}
+.flaticon-map:before {
+    content: map-get($flaticon_mycollection-map, "map");
+}
+.flaticon-location:before {
+    content: map-get($flaticon_mycollection-map, "location");
+}
+.flaticon-telephone-1:before {
+    content: map-get($flaticon_mycollection-map, "telephone-1");
+}
+.flaticon-smartphone:before {
+    content: map-get($flaticon_mycollection-map, "smartphone");
+}
+.flaticon-call:before {
+    content: map-get($flaticon_mycollection-map, "call");
+}
+.flaticon-smartphone-1:before {
+    content: map-get($flaticon_mycollection-map, "smartphone-1");
+}
+.flaticon-angle-left:before {
+    content: map-get($flaticon_mycollection-map, "angle-left");
+}
+.flaticon-right-arrow-angle:before {
+    content: map-get($flaticon_mycollection-map, "right-arrow-angle");
+}
+.flaticon-right-arrow-1:before {
+    content: map-get($flaticon_mycollection-map, "right-arrow-1");
+}
+.flaticon-right:before {
+    content: map-get($flaticon_mycollection-map, "right");
+}
+.flaticon-right-arrow-2:before {
+    content: map-get($flaticon_mycollection-map, "right-arrow-2");
+}
+.flaticon-arrow-button:before {
+    content: map-get($flaticon_mycollection-map, "arrow-button");
+}
+.flaticon-right-arrow-3:before {
+    content: map-get($flaticon_mycollection-map, "right-arrow-3");
+}
+.flaticon-left-quote:before {
+    content: map-get($flaticon_mycollection-map, "left-quote");
+}
+.flaticon-left-quotes-sign:before {
+    content: map-get($flaticon_mycollection-map, "left-quotes-sign");
+}
+.flaticon-quote:before {
+    content: map-get($flaticon_mycollection-map, "quote");
+}
+.flaticon-quote-1:before {
+    content: map-get($flaticon_mycollection-map, "quote-1");
+}
+.flaticon-quote-2:before {
+    content: map-get($flaticon_mycollection-map, "quote-2");
+}
+.flaticon-chat:before {
+    content: map-get($flaticon_mycollection-map, "chat");
+}
+.flaticon-chat-1:before {
+    content: map-get($flaticon_mycollection-map, "chat-1");
+}
+.flaticon-left-quote-1:before {
+    content: map-get($flaticon_mycollection-map, "left-quote-1");
+}
+.flaticon-quotes:before {
+    content: map-get($flaticon_mycollection-map, "quotes");
+}
+.flaticon-quotation:before {
+    content: map-get($flaticon_mycollection-map, "quotation");
+}

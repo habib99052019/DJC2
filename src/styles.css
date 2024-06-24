@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    background-color: antiquewhite;
+
+
+}
+
+.active,
+.dot:hover{
+    opacity: 1;
+}

@@ -1,0 +1,180 @@
+<div class="banner py-0">
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <img src="{{ slide.img }}" alt="" width="1920" height="1080" class="rev-slidebg tp-rs-img rs-lazyload">
+
+
+    </div>
+  </ngx-slick-carousel>
+</div>
+
+<!-- About Us -->
+<section class="about-us pq-bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 wow animated fadeInLeft">
+        <div class="pq-about-us-img">
+          <img src="assets/images/about-us/9.jpg" class="pq-about-us-img-3" alt="">
+          <img src="assets/images/about-us/8.jpg" class="pq-about-us-img-4" alt="">
+        </div>
+      </div>
+      <div class="col-xl-6 mt-4 mt-xl-0 pq-ps-60 wow animated fadeInRight">
+        <div class="pq-section-title pq-style-1 pq-mb-30">
+          <div class="pq-section-sub-title">
+            <span class="left-sep"></span>
+            {{'about'|translate}}
+            <span class="right-sep"></span>
+          </div>
+          <h5 class="pq-section-main-title">Delta juridique Suisse</h5>
+          <p class="pq-section-description">{{'P aboutUs'|translate}}</p>
+        </div>
+        <ul class="pq-list-check pq-mb-45">
+          <li>
+            <i class="pt-flaticon-right-arrow"></i>
+            <span>{{'Market research'|translate}}</span>
+          </li>
+          <li>
+            <i class="pt-flaticon-right-arrow"></i>
+            <span>{{'Consulting and Advice'|translate}}</span>
+          </li>
+          <li>
+            <i class="pt-flaticon-right-arrow"></i>
+            <span>{{'Commercial mediations'|translate}}</span>
+          </li>
+          <li>
+            <i class="pt-flaticon-right-arrow"></i>
+            <span>{{'Accompanying businesspersons in their investment missions'|translate}}</span>
+          </li>
+        </ul>
+        <a class="pq-button pq-button-flat" routerLink="/aboutUs">
+          <div class="pq-button-block">
+            <span class="pq-button-text">{{'Read more'|translate}}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About Us -->
+
+<!-- Service -->
+<section class="service">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="pq-section-title pq-style-1">
+          <div class="pq-section-sub-title">
+            <span class="left-sep"></span>
+            {{'services'|translate}}
+            <span class="right-sep"></span>
+          </div>
+          <h5 class="pq-section-main-title">{{'services'|translate}}</h5>
+        </div>
+      </div>
+      <div class="col-xl-8 mt-5 mt-xl-0 pq-ps-60">
+        <div class="pq-service-box-6-list">
+          <div class="item">
+            <div class="pq-service-box pq-style-6">
+              <div class="pq-service-icon">
+                <i class="flaticon-003-courthouse"></i>
+              </div>
+              <div class="pq-service-box-title">
+                <h5 class="pq-service-title">{{'studies'|translate}}</h5>
+              </div>
+              <p class="pq-service-description">{{'P studies'|translate}}
+                appointment</p>
+              <div class="pq-btn-container">
+                <a class="pq-button pq-button-icon" routerLink="/services/studies">
+                  <div class="pq-button-block">
+                    <span class="pq-button-text"></span>
+                    <i class="pt-flaticon-right-arrow"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="pq-service-box pq-style-6">
+              <div class="pq-service-icon">
+                <i class="flaticon-009-jury"></i>
+              </div>
+              <div class="pq-service-box-title">
+                <h5 class="pq-service-title">{{'tips'|translate}}</h5>
+              </div>
+              <p class="pq-service-description">{{'P tips'|translate}}
+              </p>
+              <div class="pq-btn-container">
+                <a class="pq-button pq-button-icon" routerLink="/services/tips">
+                  <div class="pq-button-block">
+                    <span class="pq-button-text"></span>
+                    <i class="pt-flaticon-right-arrow"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="pq-service-box pq-style-6">
+              <div class="pq-service-icon">
+                <i class="flaticon-016-agreement"></i>
+              </div>
+              <div class="pq-service-box-title">
+                <h5 class="pq-service-title">{{'accompanying'|translate}}</h5>
+              </div>
+              <p class="pq-service-description">{{'Accompanying businesspersons in their investment missions'|translate}}</p>
+              <div class="pq-btn-container">
+                <a class="pq-button pq-button-icon" routerLink="/services/accompanying">
+                  <div class="pq-button-block">
+                    <span class="pq-button-text"></span>
+                    <i class="pt-flaticon-right-arrow"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="pq-service-box pq-style-6">
+              <div class="pq-service-icon">
+                <i class="flaticon-021-gavel"></i>
+              </div>
+              <div class="pq-service-box-title">
+                <h5 class="pq-service-title">{{'mediation'|translate}}</h5>
+              </div>
+              <p class="pq-service-description">{{'P mediation'|translate}}</p>
+              <div class="pq-btn-container">
+                <a class="pq-button pq-button-icon" routerLink="/services/mediation">
+                  <div class="pq-button-block">
+                    <span class="pq-button-text"></span>
+                    <i class="pt-flaticon-right-arrow"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="pq-service-box pq-style-6">
+              <div class="pq-service-icon">
+                <i class="flaticon-016-agreement"></i>
+              </div>
+              <div class="pq-service-box-title">
+                <h5 class="pq-service-title">{{'arbitration'|translate}}</h5>
+              </div>
+              <p class="pq-service-description">{{'P arbitration'|translate}}</p>
+              <div class="pq-btn-container">
+                <a class="pq-button pq-button-icon" routerLink="/services/arbitration">
+                  <div class="pq-button-block">
+                    <span class="pq-button-text"></span>
+                    <i class="pt-flaticon-right-arrow"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Service -->
+
