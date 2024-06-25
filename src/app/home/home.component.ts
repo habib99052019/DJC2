@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
-
+import { Component, Input , OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+ 
 declare var $ :any
 
 interface carouselImage{
@@ -10,11 +11,27 @@ interface carouselImage{
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
+ 
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
-
+ 
+  act="slide-content"
+  slickInit(e:any) {
+    console.log('slick initialized');
+  }
+  
+  breakpoint(e:any) {
+    console.log('breakpoint');
+  }
+  
+  afterChange(e:any) {
+    console.log('afterChange');
+  }
+  
+  beforeChange(e:any) {
+    console.log('beforeChange');
+  }
   slides = [
 
     { img: 'assets/images/carousel/carousel11.jpg' },
@@ -23,12 +40,15 @@ export class HomeComponent {
     { img: 'assets/images/carousel/carousel15.jpg'}
   
   ];
-  slideConfig = { slidesToShow: 1, slidesToScroll: 1,autoplay:true,autoplaySpeed:2000,dots:true};
+  slideConfig = { slidesToShow: 1, slidesToScroll: 1,autoplay:true,autoplaySpeed:5000,dots:true };
+  ngOnInit() {
 
+    
+  }
 
  
     
-    
+  
   
 
 }
