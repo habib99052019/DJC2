@@ -1,117 +1,126 @@
-    <!-- Header -->
-    <header id="pq-header" class="pq-header-style-2 pq-has-sticky ">
-        <div class="pq-top-header top-style-1">
-            <div class="container-fluid">
-                <div class="row flex-row-reverse">
-                    <div class="col-md-6 text-right">
-                        <div class="pq-header-social text-right">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li class="menu-item menu-item-has-children">
-                                    <select class="form-control glyphicon" (change)="ChangeLanguage($event)">
-                                        <option [selected]="lang==='en'"  value="en" class="menu-item">English</option>
-                                        <option [selected]="lang==='fr'"  value="fr" class="menu-item">Frensh</option>
-                                        <option [selected]="lang==='ar'" value="ar" class="menu-item">Arabe</option>
-                                    </select>
-                                </li>
-                            </ul>
+<!-- Header -->
+<header id="pq-header" class="pq-header-style-2 pq-has-sticky ">
+    <div class="pq-top-header top-style-1">
+        <div class="container-fluid">
+            <div class="row flex-row-reverse">
+                <div class="col-md-6 text-right">
+                    <div class="pq-header-social text-right">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li class="menu-item menu-item-has-children" style="opacity: 0;pointer-events: none;"></li>
+                            <li class="menu-item menu-item-has-children" style="opacity: 0;pointer-events: none;"></li>
+                            <li class="menu-item menu-item-has-children" style="opacity: 0;pointer-events: none;"></li>
+                            <li class="menu-item menu-item-has-children" style="opacity: 0;pointer-events: none;"></li>
+                            <li class="menu-item menu-item-has-children" style="opacity: 0;pointer-events: none;"></li>
+                        </ul>
+                        <div class="select">
+                            <img [src]="icon" alt="icon">
+                            <select (change)="ChangeLanguage($event)">
+                                <option [selected]="lang==='en'" value="en" class="menu-item">English</option>
+                                <option [selected]="lang==='fr'" value="fr" class="menu-item">Frensh</option>
+                                <option [selected]="lang==='ar'" value="ar" class="menu-item">Arabic</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="pq-header-contact">
-                            <ul>
-                                <li>
-                                    <i class="fa fa-map-marker-alt"></i>
-                                    <span>Envato HQ 24 Fifth st Angeles, USA</span>
-                                </li>
-                                <li>
-                                    <i class="fa fa-clock"></i>
-                                    <span>Mon - Fri 08:00 AM - 05:00 PM</span>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pq-header-contact">
+                        <ul>
+                            <li>
+                                <i class="fa fa-map-marker-alt"></i>
+                                <span>Envato HQ 24 Fifth st Angeles, USA</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-clock"></i>
+                                <span>Mon - Fri 08:00 AM - 05:00 PM</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="pq-bottom-header">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg navbar-light">
-                            <a class="navbar-brand" routerLink="/home">
-                                <img class="img-fluid logo" src="assets/images/logos/loader.jpg" alt="DJS">
-                            </a>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <div id="pq-menu-contain" class="pq-menu-contain">
-                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
-                                        <li class="menu-item">
-                                            <a routerLink="/home">{{'home'|translate}}</a>
-                                        </li>
+    </div>
+    <div class="pq-bottom-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" routerLink="/home">
+                            <img class="img-fluid logo" src="assets/images/logos/loader.jpg" alt="DJS">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div id="pq-menu-contain" class="pq-menu-contain">
+                                <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                    <li class="menu-item">
+                                        <a routerLink="/home">{{'home'|translate}}</a>
+                                    </li>
 
-                                        <li class="menu-item">
-                                            <a routerLink="/aboutUs">{{'about'|translate}}</a>
-                                        </li>
-                                       
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="#service">{{'services'|translate}}</a>
-                                            <i class="fa fa-chevron-down pq-submenu-icon"></i>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a routerLink="/services/studies">{{'Studies'|translate}}</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a routerLink="/services/tips">{{'Tips'|translate}}</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a routerLink="/services/accompanying">{{'Accompanying'|translate}}</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a routerLink="/services/mediation">{{'Mediation'|translate}}</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a routerLink="/services/arbitration">{{'Arbitration'|translate}}</a>
-                                                </li>
-    
-                                            </ul>
-                                        </li>
-                                     
-                                                             
-                                        <li class="menu-item">
-                                            <a routerLink="/contactUS">{{'contact'|translate}}</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                    <li class="menu-item">
+                                        <a routerLink="/aboutUs">{{'about'|translate}}</a>
+                                    </li>
+
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#service">{{'services'|translate}}</a>
+                                        <i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a routerLink="/services/studies">{{'Studies'|translate}}</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a routerLink="/services/tips">{{'Tips'|translate}}</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a routerLink="/services/accompanying">{{'Accompanying'|translate}}</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a routerLink="/services/mediation">{{'Mediation'|translate}}</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a routerLink="/services/arbitration">{{'Arbitration'|translate}}</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="menu-item">
+                                        <a routerLink="/contactUS">{{'contact'|translate}}</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="pq-menu-search-block">
-                                <a href="javascript:void(0)" class="pq-tools-serach-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvassearch">
-                                    <i class="ti-search"></i>
-                                </a>
-                                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvassearch">
-                                    <form class="search-form">
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                        <label>
-                                            <span class="screen-reader-text">Search for:</span>
-                                            <input type="search" class="search-field" placeholder="Search …" value="" name="s">
-                                        </label>
-                                        <button type="submit" class="search-submit">
-                                            <span class="screen-reader-text">Search</span>
-                                        </button>
-                                    </form>
-                                </div>
+                        </div>
+                        <div class="pq-menu-search-block">
+                            <a href="javascript:void(0)" class="pq-tools-serach-button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvassearch">
+                                <i class="ti-search"></i>
+                            </a>
+                            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvassearch">
+                                <form class="search-form">
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                    <label>
+                                        <span class="screen-reader-text">Search for:</span>
+                                        <input type="search" class="search-field" placeholder="Search …" value=""
+                                            name="s">
+                                    </label>
+                                    <button type="submit" class="search-submit">
+                                        <span class="screen-reader-text">Search</span>
+                                    </button>
+                                </form>
                             </div>
-                        
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fas fa-bars"></i>
-                            </button>
-                        </nav>
-                    </div>
+                        </div>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </nav>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- Header -->
+    </div>
+</header>
+<!-- Header -->

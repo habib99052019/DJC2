@@ -1,0 +1,36 @@
+.select{
+
+    width: 19%;
+    background-color: white;
+    padding: 0.5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.2vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 8%;
+    right: 2%;
+
+}
+
+.select select{
+
+    width: 100% !important;
+    background-color: transparent;
+    border: none;
+    height: auto;
+    position: absolute;
+    left: 0;
+    z-index: 32534;
+    padding-left: 30%;
+
+}
+
+.select img{
+
+    width: 20%;
+    margin-left: 5%;
+
+}

@@ -10,6 +10,8 @@ export class HeaderComponent implements OnInit {
 
   lang:string ='';
 
+  icon = "/assets/images/en.png"
+
   constructor(private translateService : TranslateService){
     
   }
@@ -22,6 +24,8 @@ export class HeaderComponent implements OnInit {
   ChangeLanguage(language:any){
 
     const selectedLanguage = language.target.value;
+
+    this.icon = "/assets/images/"+selectedLanguage+".png"
 
     localStorage.setItem('language',selectedLanguage);
 
