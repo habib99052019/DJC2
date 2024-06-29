@@ -71,23 +71,23 @@ export class HomeComponent {
   slides = [
 
     {
-      title: "slide 1",
-      description: "The real estate market in Dubai has consistently delivered high rental yields, with an average ROI ranging from 6-15%.",
+      title: "Effective market research",
+      description: "We allow you to take the appropriate measures to establish yourself sustainably in your market",
       img: 'assets/images/carousel/carousel11.jpg'
     },
     {
-      title: "slide 2",
-      description: "The real estate market in Dubai has consistently delivered high rental yields, with an average ROI ranging from 6-15%.",
+      title: "Tips",
+      description: "Professional assistance in operational and strategic business management",
       img: 'assets/images/carousel/carousel13.jpg'
     },
     {
-      title: "slide 3",
-      description: "The real estate market in Dubai has consistently delivered high rental yields, with an average ROI ranging from 6-15%.",
+      title: "Commercial mediations",
+      description: "We offer mediation in difficult conflicts in the business world",
       img: 'assets/images/carousel/carousel14.jpg'
     },
     {
-      title: "slide 4",
-      description: "The real estate market in Dubai has consistently delivered high rental yields, with an average ROI ranging from 6-15%.",
+      title: "Arbitration",
+      description: "We find solutions to our customers' daily challenges",
       img: 'assets/images/carousel/carousel15.jpg'
     }
 

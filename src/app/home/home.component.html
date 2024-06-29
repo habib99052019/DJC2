@@ -25,9 +25,9 @@
 
         <img src="{{ slide.img }}" alt="" width="1920" height="1080" class="">
         <div class="content">
-          <img src="assets/images/logos/12.png" alt="Logo" class="slide-logo">
-          <h1 class="slide-title">{{slide.title}}</h1>
-          <p class="slide-description ">{{slide.description}}</p>
+          <img src="assets/images/vec.png" alt="Logo" class="slide-logo">
+          <h1 class="slide-title">{{slide.title|translate}}</h1>
+          <p class="slide-description ">{{slide.description|translate}}</p>
         </div>
       </div>
     </div>
@@ -44,8 +44,8 @@
 
         <img src="{{ slide.img }}" alt="" width="1920" height="1080" class="">
         <div class="content">
-          <img src="assets/images/logos/12.png" alt="Logo" class="slide-logo">
-          <h1 class="slide-title">{{slide.title}}</h1>
+          <img src="assets/images/vec.png" alt="Logo" class="slide-logo">
+          <h1 class="slide-title">{{slide.title}} </h1>
           <p class="slide-description ">{{slide.description}}</p>
         </div>
       </div>
@@ -58,19 +58,17 @@
 </div>
 <section class="about-us">
   <div class="container">
-    <div class="row align-items-center" data-aos="fade-up">
+    <div class="row align-items-center" data-aos="fade-up" >
 
-      <div class="col-xl-6 mt-4 mt-xl-0 ps-xl-5 " data-aos="fade-right" data-aos-duration="2000">
+      <div class="col-xl-6 mt-4 mt-xl-0 ps-xl-5 " >
         <div class="pq-section-title pq-style-1 pq-mb-30">
           <div class="pq-section-sub-title">
             <span class="left-sep"></span>
-            about us
+            {{'about'|translate}}
             <span class="right-sep"></span>
           </div>
-          <h5 class="pq-section-main-title">we are the leading law firm industry</h5>
-          <p class="pq-section-description">It encompasses a wide range of principles and guidelines established by a
-            government or other authoritative body. The primary purpose of law is to fairness, and equality in needs of
-            the society they serve.</p>
+          <h5 class="pq-section-main-title">Delta juridique Suisse</h5>
+          <p class="pq-section-description">{{'P aboutUs'|translate}}</p>
         </div>
         <div class="row pq-mb-30">
           <div class="col-lg-6 col-md-6 pe-xl-0">
@@ -79,7 +77,7 @@
                 <i class="flaticon-019-law"></i>
               </div>
               <div class="pq-icon-box-content">
-                <h5 class="pq-icon-box-title">free initial consultations</h5>
+                <h5 class="pq-icon-box-title">{{'free initial consultation'|translate}}</h5>
               </div>
             </div>
           </div>
@@ -89,58 +87,10 @@
                 <i class="flaticon-016-agreement"></i>
               </div>
               <div class="pq-icon-box-content">
-                <h5 class="pq-icon-box-title">Innovative Approach</h5>
+                <h5 class="pq-icon-box-title">{{'Innovative Approach'|translate}}</h5>
               </div>
             </div>
           </div>
-        </div>
-        <ul class="pq-list-check pq-mb-45">
-          <li>
-            <i class="pt-flaticon-right-arrow"></i>
-            <span>Leading the Way in Legal Solutions and Client Satisfaction</span>
-          </li>
-          <li>
-            <i class="pt-flaticon-right-arrow"></i>
-            <span>Your Go-To Law Firm for Industry-Specific Legal Needs</span>
-          </li>
-          <li>
-            <i class="pt-flaticon-right-arrow"></i>
-            <span>Trusted Advisors: Leading the Legal Landscape</span>
-          </li>
-        </ul>
-        <a class="pq-button pq-button-flat" href="about-us.html">
-          <div class="pq-button-block">
-            <span class="pq-button-text">Read more</span>
-          </div>
-        </a>
-      </div>
-      <div class="col-xl-6 " data-aos="fade-left" data-aos-duration="2000">
-        <img
-          src="https://images.pexels.com/photos/3184162/pexels-photo-3184162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          class="img-fluid w-100" alt="">
-      </div>
-    </div>
-  </div>
-</section>
-<!-- About Us -->
-<section class="about-us pq-bg-dark" data-aos="fade-up" data-aos-duration="3000">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-6 wow animated fadeInLeft">
-        <div class="pq-about-us-img">
-          <img src="assets/images/about-us/9.jpg" class="pq-about-us-img-3" alt="">
-          <img src="assets/images/about-us/8.jpg" class="pq-about-us-img-4" alt="">
-        </div>
-      </div>
-      <div class="col-xl-6 mt-4 mt-xl-0 pq-ps-60 wow animated fadeInRight">
-        <div class="pq-section-title pq-style-1 pq-mb-30">
-          <div class="pq-section-sub-title">
-            <span class="left-sep"></span>
-            {{'about'|translate}}
-            <span class="right-sep"></span>
-          </div>
-          <h5 class="pq-section-main-title">Delta juridique Suisse</h5>
-          <p class="pq-section-description">{{'P aboutUs'|translate}}</p>
         </div>
         <ul class="pq-list-check pq-mb-45">
           <li>
@@ -158,18 +108,61 @@
           <li>
             <i class="pt-flaticon-right-arrow"></i>
             <span>{{'Accompanying businesspersons in their investment missions'|translate}}</span>
-          </li>
+        </li>
         </ul>
+        <a class="pq-button pq-button-flat" routerLink="/aboutUs">
+          <div class="pq-button-block">
+              <span class="pq-button-text">{{'Read more'|translate}}</span>
+          </div>
+      </a>
+      </div>
+      <div class="col-xl-6 " >
+        <img
+          src="https://images.pexels.com/photos/3184162/pexels-photo-3184162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="img-fluid w-100" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- secteur activite -->
+<section class="about-us pq-bg-dark" data-aos="fade-up" data-aos-duration="3000">
+  <div class="container">
+    <div class="row">
+     
+      <div class="col-xl-6 mt-4 mt-xl-0 pq-ps-60 wow animated fadeInLeft">
+        <div class="pq-section-title pq-style-1 pq-mb-30">
+          <div class="pq-section-sub-title">
+            <span class="left-sep"></span>
+            {{'Secteur_activite'|translate}}
+            <span class="right-sep"></span>
+          </div>
+          <p class="pq-section-description">{{'P secteur_activite'|translate}}</p>
+          <br>
+          <div class="pq-section-sub-title">
+            <span class="left-sep"></span>
+            {{'Our goal'|translate}}
+            <span class="right-sep"></span>
+          </div>
+          <p class="pq-section-description">{{'P Our goal'|translate}}</p>
+        </div>
+  
         <a class="pq-button pq-button-flat" routerLink="/aboutUs">
           <div class="pq-button-block">
             <span class="pq-button-text">{{'Read more'|translate}}</span>
           </div>
         </a>
       </div>
+
+      <div class="col-xl-6 wow animated fadeInRight">
+        <div class="pq-about-us-img">
+          <img src="assets/images/about-us/9.jpg" class="pq-about-us-img-3" alt="">
+          <img src="assets/images/about-us/8.jpg" class="pq-about-us-img-4" alt="">
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<!-- About Us -->
+<!-- secteur activite -->
 
 <!-- Service -->
 <section class="service">
@@ -190,13 +183,13 @@
           <div class="item">
             <div class="pq-service-box pq-style-6">
               <div class="pq-service-icon">
-                <i class="flaticon-003-courthouse"></i>
+                <i class="flaticon-030-advice"></i>
               </div>
               <div class="pq-service-box-title">
-                <h5 class="pq-service-title">{{'studies'|translate}}</h5>
+                <h5 class="pq-service-title">{{'Studies'|translate}}</h5>
               </div>
               <p class="pq-service-description">{{'P studies'|translate}}
-                appointment</p>
+                </p>
               <div class="pq-btn-container">
                 <a class="pq-button pq-button-icon" routerLink="/services/studies">
                   <div class="pq-button-block">
@@ -213,7 +206,7 @@
                 <i class="flaticon-009-jury"></i>
               </div>
               <div class="pq-service-box-title">
-                <h5 class="pq-service-title">{{'tips'|translate}}</h5>
+                <h5 class="pq-service-title">{{'Tips'|translate}}</h5>
               </div>
               <p class="pq-service-description">{{'P tips'|translate}}
               </p>
@@ -233,10 +226,9 @@
                 <i class="flaticon-016-agreement"></i>
               </div>
               <div class="pq-service-box-title">
-                <h5 class="pq-service-title">{{'accompanying'|translate}}</h5>
+                <h5 class="pq-service-title">{{'Accompanying'|translate}}</h5>
               </div>
-              <p class="pq-service-description">{{'Accompanying businesspersons in their investment
-                missions'|translate}}</p>
+              <p class="pq-service-description">{{'P Accompanying'|translate}}</p>
               <div class="pq-btn-container">
                 <a class="pq-button pq-button-icon" routerLink="/services/accompanying">
                   <div class="pq-button-block">
@@ -253,7 +245,7 @@
                 <i class="flaticon-021-gavel"></i>
               </div>
               <div class="pq-service-box-title">
-                <h5 class="pq-service-title">{{'mediation'|translate}}</h5>
+                <h5 class="pq-service-title">{{'Mediation'|translate}}</h5>
               </div>
               <p class="pq-service-description">{{'P mediation'|translate}}</p>
               <div class="pq-btn-container">
@@ -270,10 +262,10 @@
           <div class="item">
             <div class="pq-service-box pq-style-6">
               <div class="pq-service-icon">
-                <i class="flaticon-016-agreement"></i>
+                <i class="flaticon-007-lawyer"></i>
               </div>
               <div class="pq-service-box-title">
-                <h5 class="pq-service-title">{{'arbitration'|translate}}</h5>
+                <h5 class="pq-service-title">{{'Arbitration'|translate}}</h5>
               </div>
               <p class="pq-service-description">{{'P arbitration'|translate}}</p>
               <div class="pq-btn-container">
