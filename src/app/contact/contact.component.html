@@ -113,10 +113,10 @@
                             </div>
                             <div class="col-lg-12">
                                 <textarea cols="40" rows="10" name="message" placeholder="{{'Message'|translate}}"
-                                    formControlName="subject"></textarea>
+                                    formControlName="message"></textarea>
                             </div>
                             <div class="col-lg-12">
-                                <button type="submit" class="pq-button" onclick="submit()">{{'SEND'|translate}}</button>
+                                <button class="pq-button" (click)="submit()">{{'SEND'|translate}}</button>
                             </div>
                         </div>
                     </form>

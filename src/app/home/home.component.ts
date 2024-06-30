@@ -19,6 +19,13 @@ export class HomeComponent {
   
   activeSlide = 0
 
+  isArabic(){
+    if(localStorage.getItem("language")==="ar"){
+      return true
+    }
+    return false
+  }
+
   showActivatedSlide(index: any) {
 
     const container: any = document.querySelector(".cs-custom-slider")
@@ -71,24 +78,24 @@ export class HomeComponent {
   slides = [
 
     {
-      title: "Effective market research",
-      description: "We allow you to take the appropriate measures to establish yourself sustainably in your market",
-      img: 'assets/images/carousel/carousel11.jpg'
+      title: "Market research",
+      description: "We provide information and advice",
+      img: 'assets/images/carousel/carousel15.jpg'
     },
     {
       title: "Tips",
-      description: "Professional assistance in operational and strategic business management",
-      img: 'assets/images/carousel/carousel13.jpg'
+      description: "Providing advice and counseling in commercial, financial and real estate operations",
+      img: 'assets/images/carousel/carousel16.jpg'
     },
     {
-      title: "Commercial mediations",
-      description: "We offer mediation in difficult conflicts in the business world",
+      title: "Mediation",
+      description: "We provide mediation in commercial and financial operations",
       img: 'assets/images/carousel/carousel14.jpg'
     },
     {
       title: "Arbitration",
-      description: "We find solutions to our customers' daily challenges",
-      img: 'assets/images/carousel/carousel15.jpg'
+      description: "Speedy dismissal and guarantee of rights",
+    img: 'assets/images/carousel/carouselArbitration.jpg'
     }
 
   ];

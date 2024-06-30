@@ -12,13 +12,13 @@ export class HeaderComponent implements OnInit {
 
   icon = "/assets/images/en.png"
 
-  constructor(private translateService : TranslateService){
-    
-  }
+  constructor(private translateService : TranslateService){}
 
   ngOnInit(): void {
     this.lang = localStorage.getItem('language') || 'fr';
-    
+
+    this.icon = "/assets/images/"+this.lang+".png"
+
   }
 
   ChangeLanguage(language:any){

@@ -34,3 +34,14 @@
     margin-left: 5%;
 
 }
+
+.menu-item{
+
+    scale: 1.1;
+    margin: 0 3%;
+
+}
+
+.logo{
+    scale: 1.4 !important;
+}

@@ -56,67 +56,87 @@
     </div>
   </div>
 </div>
-<section class="about-us">
+<section class="about-us"> 
   <div class="container">
-    <div class="row align-items-center" data-aos="fade-up" >
-
-      <div class="col-xl-6 mt-4 mt-xl-0 ps-xl-5 " >
+    <div class="row align-items-center" data-aos="fade-up">
+      <div class="col-xl-6 " [ngStyle]="{'display':isArabic() ? 'block':'none'}">
+        <img
+          src="https://images.pexels.com/photos/3184162/pexels-photo-3184162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="img-fluid w-100" alt="">
+      </div>
+      <div class="col-xl-6 mt-4 mt-xl-0 ps-xl-5 " [ngStyle]="{'textAlign':isArabic() ? 'right':'left'}">
         <div class="pq-section-title pq-style-1 pq-mb-30">
           <div class="pq-section-sub-title">
             <span class="left-sep"></span>
-            {{'about'|translate}}
-            <span class="right-sep"></span>
+            {{'aboutUs'|translate}}
           </div>
-          <h5 class="pq-section-main-title">Delta juridique Suisse</h5>
+          <!--<h5 class="pq-section-main-title">Delta juridique Suisse</h5>-->
           <p class="pq-section-description">{{'P aboutUs'|translate}}</p>
         </div>
         <div class="row pq-mb-30">
           <div class="col-lg-6 col-md-6 pe-xl-0">
-            <div class="pq-icon-box pq-style-1">
-              <div class="pq-icon">
+            <div class="pq-icon-box pq-style-1" [ngStyle]="{'justifyContent':isArabic() ? 'right':'left'}">
+              <div class="pq-icon" [ngStyle]="{'display':isArabic() ? 'none':'block'}">
                 <i class="flaticon-019-law"></i>
               </div>
               <div class="pq-icon-box-content">
                 <h5 class="pq-icon-box-title">{{'free initial consultation'|translate}}</h5>
               </div>
+              <div class="pq-icon" [ngStyle]="{'display':isArabic() ? 'block':'none'}">
+                <i class="flaticon-019-law"></i>
+              </div>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 mt-4 mt-md-0 ps-xl-0">
-            <div class="pq-icon-box pq-style-1">
-              <div class="pq-icon">
+            <div class="pq-icon-box pq-style-1" [ngStyle]="{'justifyContent':isArabic() ? 'right':'left'}">
+              <div class="pq-icon" [ngStyle]="{'display':isArabic() ? 'none':'block'}">
                 <i class="flaticon-016-agreement"></i>
               </div>
               <div class="pq-icon-box-content">
                 <h5 class="pq-icon-box-title">{{'Innovative Approach'|translate}}</h5>
               </div>
+              <div class="pq-icon" [ngStyle]="{'display':isArabic() ? 'block':'none'}">
+
+                <i class="flaticon-016-agreement"></i>
+              </div>
             </div>
           </div>
         </div>
-        <ul class="pq-list-check pq-mb-45">
-          <li>
-            <i class="pt-flaticon-right-arrow"></i>
-            <span>{{'Market research'|translate}}</span>
-          </li>
-          <li>
-            <i class="pt-flaticon-right-arrow"></i>
-            <span>{{'Consulting and Advice'|translate}}</span>
-          </li>
-          <li>
-            <i class="pt-flaticon-right-arrow"></i>
-            <span>{{'Commercial mediations'|translate}}</span>
-          </li>
-          <li>
-            <i class="pt-flaticon-right-arrow"></i>
-            <span>{{'Accompanying businesspersons in their investment missions'|translate}}</span>
-        </li>
-        </ul>
+        <div style="display: flex;" [ngStyle]="{'justifyContent':isArabic() ? 'right':'left'}">
+          <ul class="pq-list-check pq-mb-45">
+            <li style="display: flex;align-items: flex-start;"
+              [ngStyle]="{'justifyContent':isArabic() ? 'right':'left'}">
+              <i class="pt-flaticon-right-arrow" [ngStyle]="{'display':isArabic() ? 'none':'block'}"></i>
+              <span>{{'Market research'|translate}}</span>
+              <i class="pt-flaticon-right-arrow" [ngStyle]="{'display':isArabic() ? 'block':'none'}"></i>
+            </li>
+            <li style="display: flex;align-items: flex-start;"
+              [ngStyle]="{'justifyContent':isArabic() ? 'right':'left'}">
+              <i class="pt-flaticon-right-arrow" [ngStyle]="{'display':isArabic() ? 'none':'block'}"></i>
+              <span>{{'Consulting and Advice'|translate}}</span>
+              <i class="pt-flaticon-right-arrow" [ngStyle]="{'display':isArabic() ? 'block':'none'}"></i>
+            </li>
+            <li style="display: flex;align-items: flex-start;"
+              [ngStyle]="{'justifyContent':isArabic() ? 'right':'left'}">
+              <i class="pt-flaticon-right-arrow" [ngStyle]="{'display':isArabic() ? 'none':'block'}"></i>
+              <span>{{'Commercial mediations'|translate}}</span>
+              <i class="pt-flaticon-right-arrow" [ngStyle]="{'display':isArabic() ? 'block':'none'}"></i>
+            </li>
+            <li style="display: flex;align-items: flex-start;"
+              [ngStyle]="{'justifyContent':isArabic() ? 'right':'left'}">
+              <i class="pt-flaticon-right-arrow" [ngStyle]="{'display':isArabic() ? 'none':'block'}"></i>
+              <span>{{'Accompanying businesspersons in their investment missions'|translate}}</span>
+              <i class="pt-flaticon-right-arrow" [ngStyle]="{'display':isArabic() ? 'block':'none'}"></i>
+            </li>
+          </ul>
+        </div>
         <a class="pq-button pq-button-flat" routerLink="/aboutUs">
           <div class="pq-button-block">
-              <span class="pq-button-text">{{'Read more'|translate}}</span>
+            <span class="pq-button-text">{{'Read more'|translate}}</span>
           </div>
-      </a>
+        </a>
       </div>
-      <div class="col-xl-6 " >
+      <div class="col-xl-6 " [ngStyle]="{'display':isArabic() ? 'none':'block'}">
         <img
           src="https://images.pexels.com/photos/3184162/pexels-photo-3184162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           class="img-fluid w-100" alt="">
@@ -128,8 +148,15 @@
 <section class="about-us pq-bg-dark" data-aos="fade-up" data-aos-duration="3000">
   <div class="container">
     <div class="row">
-     
-      <div class="col-xl-6 mt-4 mt-xl-0 pq-ps-60 wow animated fadeInLeft">
+
+      <div class="col-xl-6 wow animated fadeInRight" [ngStyle]="{'display':isArabic() ? 'block':'none'}">
+        <div class="pq-about-us-img">
+          <img src="assets/images/about-us/9.jpg" class="pq-about-us-img-3" alt="">
+          <img src="assets/images/about-us/8.jpg" class="pq-about-us-img-4" alt="">
+        </div>
+      </div>
+
+      <div class="col-xl-6 mt-4 mt-xl-0 pq-ps-60 wow animated fadeInLeft" [ngStyle]="{'textAlign':isArabic() ? 'right':'left'}">
         <div class="pq-section-title pq-style-1 pq-mb-30">
           <div class="pq-section-sub-title">
             <span class="left-sep"></span>
@@ -145,15 +172,15 @@
           </div>
           <p class="pq-section-description">{{'P Our goal'|translate}}</p>
         </div>
-  
-        <a class="pq-button pq-button-flat" routerLink="/aboutUs">
+
+        <a class="pq-button pq-button-flat" routerLink="/services/studies">
           <div class="pq-button-block">
             <span class="pq-button-text">{{'Read more'|translate}}</span>
           </div>
         </a>
       </div>
 
-      <div class="col-xl-6 wow animated fadeInRight">
+      <div class="col-xl-6 wow animated fadeInRight" [ngStyle]="{'display':isArabic() ? 'none':'block'}">
         <div class="pq-about-us-img">
           <img src="assets/images/about-us/9.jpg" class="pq-about-us-img-3" alt="">
           <img src="assets/images/about-us/8.jpg" class="pq-about-us-img-4" alt="">
@@ -189,7 +216,7 @@
                 <h5 class="pq-service-title">{{'Studies'|translate}}</h5>
               </div>
               <p class="pq-service-description">{{'P studies'|translate}}
-                </p>
+              </p>
               <div class="pq-btn-container">
                 <a class="pq-button pq-button-icon" routerLink="/services/studies">
                   <div class="pq-button-block">

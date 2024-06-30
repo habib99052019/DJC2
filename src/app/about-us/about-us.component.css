@@ -37,15 +37,24 @@
 
 }
 
-.flex-sections .box .description p {
+.flex-sections .box .description p,
+.flex-sections .box .description li {
 
     font-size: 1.3vw;
     padding: 2% 7%;
     padding-top: 0;
     margin-top: 2%;
     line-height: 3vw;
+    font-family: var(--title-fonts);
 
 }
+
+.flex-sections .box .description li {
+
+    line-height: 2vw;
+
+}
+
 
 .flex-sections-mobile {
 
