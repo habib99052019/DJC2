@@ -55,7 +55,7 @@ Fonts
 ++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Noto+Sans+JP:wght@100..900&display=swap');
 /*+++++++++++++++++++++++++++++++++++++++++++++++
 Moz Selection
 ++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -66,7 +66,7 @@ Moz Selection
 	--secondary-color: #878c97;
 	--grey-color: #faf6f3;
 	--white-color: #ffffff;
-	--title-fonts: 'Marcellus', sans-serif;
+	--title-fonts: "Noto Sans JP", sans-serif;
 	--body-fonts: 'Open Sans', sans-serif;
 }
 
@@ -7293,7 +7293,7 @@ Service Single
 	letter-spacing: 1px;
 }
 
-.widget .menu-service-menu-container .menu li a:before {
+/* .widget .menu-service-menu-container .menu li a:before {
 	content: '\f054';
 	font-family: "Font Awesome 6 Free";
 	font-weight: 700;
@@ -7304,7 +7304,7 @@ Service Single
 	position: absolute;
 	color: inherit;
 	line-height: normal;
-}
+} */
 
 .widget .menu-service-menu-container .menu li a:hover,
 .widget .menu-service-menu-container .menu li.current-menu-item a {

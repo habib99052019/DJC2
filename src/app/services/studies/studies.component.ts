@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class StudiesComponent {
 
+  isArabic() {
+    if (localStorage.getItem("language") === "ar") {
+      return true
+    }
+    return false
+  }
+
 }

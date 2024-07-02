@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './tips.component.css'
 })
 export class TipsComponent {
-
+  isArabic() {
+    if (localStorage.getItem("language") === "ar") {
+      return true
+    }
+    return false
+  }
 }

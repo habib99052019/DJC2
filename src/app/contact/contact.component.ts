@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { environment } from '../../environments/environment.prod';
 
 @Component({
   selector: 'app-contact',
@@ -9,7 +8,7 @@ import { environment } from '../../environments/environment.prod';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent implements OnInit  {
- baseUrl=environment.baseURL
+ 
   display: any;
   center: google.maps.LatLngLiteral = {
     
@@ -55,21 +54,12 @@ export class ContactComponent implements OnInit  {
   }
 
   submit(){
-    console.log("err")
+    
     this.isFormSubmitted=true;
     
-    this.http.post(this.baseUrl +"/sendEmail",this.userForm.value).subscribe((res:any)=>{
+    this.http.post("",this.userForm.value).subscribe((res:any)=>{
 
       console.log(res)
-      var message :any
-      message=res
-      if(message.message=="email send sucessfully"){
-
-        alert("votre enregistrement a été effectué avec succès")
-      }
-      else{
-        alert("Error")
-      }
 
     })
 

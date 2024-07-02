@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './arbitration.component.css'
 })
 export class ArbitrationComponent {
-
+  isArabic() {
+    if (localStorage.getItem("language") === "ar") {
+      return true
+    }
+    return false
+  }
 }

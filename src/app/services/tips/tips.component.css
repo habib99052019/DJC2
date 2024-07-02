@@ -14,3 +14,18 @@
     object-fit: cover;
 
 }
+
+#mobileService {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    #desktopService {
+        display: none;
+    }
+    #mobileService {
+        display: block;
+    }
+
+}

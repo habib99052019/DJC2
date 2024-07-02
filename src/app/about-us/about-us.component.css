@@ -109,6 +109,16 @@
 
     }
 
+    .flex-sections-mobile .box .description ul {
+
+        font-size: 3vw;
+        padding: 2% 3%;
+        padding-bottom: 3%;
+        margin: 0;
+        line-height: 5vw;
+
+    }
+
     .flex-sections-mobile .box img {
 
         width: 100%;

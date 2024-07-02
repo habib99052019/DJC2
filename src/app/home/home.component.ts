@@ -90,7 +90,7 @@ export class HomeComponent {
     {
       title: "Mediation",
       description: "We provide mediation in commercial and financial operations",
-      img: 'assets/images/carousel/carousel14.jpg'
+      img: 'assets/images/carousel/imageSwisse.jfif'
     },
     {
       title: "Arbitration",

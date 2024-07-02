@@ -45,24 +45,27 @@
     <div class="pq-bottom-header">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12" style="position: relative;">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" routerLink="/home">
-                            <img class="img-fluid logo" src="assets/images/v15.png"  alt="DJS">
+                        <a class="navbar-brand" routerLink="/home" *ngIf="!isArabic()">
+                            <img class="img-fluid logo" src="assets/images/logArab.png" alt="DJS">
                         </a>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <div id="pq-menu-contain" class="pq-menu-contain">
                                 <ul id="pq-main-menu" class="navbar-nav ml-auto">
                                     <li class="menu-item">
-                                        <a routerLink="/home">{{'home'|translate}}</a>
+                                        <a routerLink="/home"
+                                            [ngStyle]="{'color':checkRoute('home')}">{{'home'|translate}}</a>
                                     </li>
 
                                     <li class="menu-item">
-                                        <a routerLink="/aboutUs">{{'about'|translate}}</a>
+                                        <a routerLink="/aboutUs"
+                                            [ngStyle]="{'color':checkRoute('aboutUs')}">{{'about'|translate}}</a>
                                     </li>
 
                                     <li class="menu-item menu-item-has-children">
-                                        <a routerLink="/services/studies">{{'services'|translate}}</a>
+                                        <a routerLink="/services/studies"
+                                            [ngStyle]="{'color':checkRoute('services')}">{{'services'|translate}}</a>
                                         <i class="fa fa-chevron-down pq-submenu-icon"></i>
                                         <ul class="sub-menu">
                                             <li class="menu-item">
@@ -80,19 +83,30 @@
                                             <li class="menu-item">
                                                 <a routerLink="/services/arbitration">{{'Arbitration'|translate}}</a>
                                             </li>
-
                                         </ul>
                                     </li>
 
-
                                     <li class="menu-item">
-                                        <a routerLink="/contactUS">{{'contact'|translate}}</a>
+                                        <a routerLink="/contactUS"
+                                            [ngStyle]="{'color':checkRoute('contactUS')}">{{'contact'|translate}}</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                   
-
+                        <a class="navbar-brand" routerLink="/home" *ngIf="isArabic()">
+                            <img class="img-fluid logo" src="assets/images/logArab.png" alt="DJS">
+                        </a>
+                        <div class="select select-nvbr">
+                            <img [src]="icon" alt="icon">
+                            <select (change)="ChangeLanguage($event)">
+                                <option [selected]="lang==='en'" value="en" class="menu-item">
+                                    English</option>
+                                <option [selected]="lang==='ar'" value="ar" class="menu-item">
+                                    Arabic</option>
+                                <option [selected]="lang==='fr'" value="fr" class="menu-item">
+                                    Frensh</option>
+                            </select>
+                        </div>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">

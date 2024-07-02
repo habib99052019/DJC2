@@ -24,7 +24,88 @@
 
 
 <!-- Service  -->
-<section class="service-single">
+<section class="service-single" id="desktopService">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 mt-5 mt-xl-0 pq-grey-bg" *ngIf="isArabic()">
+                <h3 class="pq-service-single-title">{{'Accompanying'|translate}}</h3>
+                <p class="pq-mb-45">{{'P Accompanying'|translate}}</p>
+                <div class="img">
+                    <img src="/assets/images/service-single/accompanying.jpg">
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="service-sidebar">
+                    <div class="widget">
+                        <div class="menu-service-menu-container">
+                            <ul id="menu-service-menu" class="menu">
+                                <li class="menu-item"
+                                    [ngStyle]="{'textAlign':isArabic() ? 'right':'left'}">
+
+                                    <a aria-current="page" routerLink="/services/studies">
+                                        <i class="fa-solid fa-angle-right" style="position: absolute;right:4%;top: 40%;"
+                                            *ngIf="!isArabic()"></i>
+                                        {{'Studies'|translate}}
+                                        <i class="fa-solid fa-angle-left" style="position: absolute;left:4%;top: 40%;"
+                                            *ngIf="isArabic()"></i>
+                                    </a>
+
+                                </li>
+                                <li class="menu-item" [ngStyle]="{'textAlign':isArabic() ? 'right':'left'}">
+                                    <a routerLink="/services/tips">
+                                        <i class="fa-solid fa-angle-right" style="position: absolute;right:4%;top: 40%;"
+                                            *ngIf="!isArabic()"></i>
+                                        {{'Tips'|translate}}
+                                        <i class="fa-solid fa-angle-left" style="position: absolute;left:4%;top: 40%;"
+                                            *ngIf="isArabic()"></i>
+                                    </a>
+                                </li>
+                                <li class="menu-item current-menu-item" [ngStyle]="{'textAlign':isArabic() ? 'right':'left'}">
+                                    <a routerLink="/services/accompanying">
+                                        <i class="fa-solid fa-angle-right" style="position: absolute;right:4%;top: 40%;"
+                                            *ngIf="!isArabic()"></i>
+                                        {{'Accompanying'|translate}}
+                                        <i class="fa-solid fa-angle-left" style="position: absolute;left:4%;top: 40%;"
+                                            *ngIf="isArabic()"></i>
+                                    </a>
+                                </li>
+                                <li class="menu-item" [ngStyle]="{'textAlign':isArabic() ? 'right':'left'}">
+                                    <a routerLink="/services/mediation">
+                                        <i class="fa-solid fa-angle-right" style="position: absolute;right:4%;top: 40%;"
+                                            *ngIf="!isArabic()"></i>
+                                        {{'Mediation'|translate}}
+                                        <i class="fa-solid fa-angle-left" style="position: absolute;left:4%;top: 40%;"
+                                            *ngIf="isArabic()"></i>
+                                    </a>
+                                </li>
+                                <li class="menu-item" [ngStyle]="{'textAlign':isArabic() ? 'right':'left'}">
+                                    <a routerLink="/services/arbitration">
+                                        <i class="fa-solid fa-angle-right" style="position: absolute;right:4%;top: 40%;"
+                                            *ngIf="!isArabic()"></i>
+                                        {{'Arbitration'|translate}}
+                                        <i class="fa-solid fa-angle-left" style="position: absolute;left:4%;top: 40%;"
+                                            *ngIf="isArabic()"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xl-8 mt-5 mt-xl-0 pq-grey-bg" *ngIf="!isArabic()">
+                <h3 class="pq-service-single-title">{{'Accompanying'|translate}}</h3>
+                <p class="pq-mb-45">{{'P Accompanying'|translate}}</p>
+                <div class="img">
+                    <img src="/assets/images/service-single/accompanying.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service-single" id="mobileService">
     <div class="container">
         <div class="row">
             <div class="col-xl-4">
@@ -32,21 +113,53 @@
                     <div class="widget">
                         <div class="menu-service-menu-container">
                             <ul id="menu-service-menu" class="menu">
-                                <li class="menu-item">
-                                    <a routerLink="/services/studies">{{'Studies'|translate}}</a>
+                                <li class="menu-item"
+                                    [ngStyle]="{'textAlign':isArabic() ? 'right':'left'}">
+
+                                    <a aria-current="page" routerLink="/services/studies">
+                                        <i class="fa-solid fa-angle-right" style="position: absolute;right:4%;top: 40%;"
+                                            *ngIf="!isArabic()"></i>
+                                        {{'Studies'|translate}}
+                                        <i class="fa-solid fa-angle-left" style="position: absolute;left:4%;top: 40%;"
+                                            *ngIf="isArabic()"></i>
+                                    </a>
+
                                 </li>
-                                <li class="menu-item">
-                                    <a routerLink="/services/tips">{{'Tips'|translate}}</a>
+                                <li class="menu-item" [ngStyle]="{'textAlign':isArabic() ? 'right':'left'}">
+                                    <a routerLink="/services/tips">
+                                        <i class="fa-solid fa-angle-right" style="position: absolute;right:4%;top: 40%;"
+                                            *ngIf="!isArabic()"></i>
+                                        {{'Tips'|translate}}
+                                        <i class="fa-solid fa-angle-left" style="position: absolute;left:4%;top: 40%;"
+                                            *ngIf="isArabic()"></i>
+                                    </a>
                                 </li>
-                                <li class="menu-item current-menu-item">
-                                    <a aria-current="page"
-                                        routerLink="/services/accompanying">{{'Accompanying'|translate}}</a>
+                                <li class="menu-item current-menu-item" [ngStyle]="{'textAlign':isArabic() ? 'right':'left'}">
+                                    <a routerLink="/services/accompanying">
+                                        <i class="fa-solid fa-angle-right" style="position: absolute;right:4%;top: 40%;"
+                                            *ngIf="!isArabic()"></i>
+                                        {{'Accompanying'|translate}}
+                                        <i class="fa-solid fa-angle-left" style="position: absolute;left:4%;top: 40%;"
+                                            *ngIf="isArabic()"></i>
+                                    </a>
                                 </li>
-                                <li class="menu-item">
-                                    <a routerLink="/services/mediation">{{'Mediation'|translate}}</a>
+                                <li class="menu-item" [ngStyle]="{'textAlign':isArabic() ? 'right':'left'}">
+                                    <a routerLink="/services/mediation">
+                                        <i class="fa-solid fa-angle-right" style="position: absolute;right:4%;top: 40%;"
+                                            *ngIf="!isArabic()"></i>
+                                        {{'Mediation'|translate}}
+                                        <i class="fa-solid fa-angle-left" style="position: absolute;left:4%;top: 40%;"
+                                            *ngIf="isArabic()"></i>
+                                    </a>
                                 </li>
-                                <li class="menu-item">
-                                    <a routerLink="/services/arbitration">{{'Arbitration'|translate}}</a>
+                                <li class="menu-item" [ngStyle]="{'textAlign':isArabic() ? 'right':'left'}">
+                                    <a routerLink="/services/arbitration">
+                                        <i class="fa-solid fa-angle-right" style="position: absolute;right:4%;top: 40%;"
+                                            *ngIf="!isArabic()"></i>
+                                        {{'Arbitration'|translate}}
+                                        <i class="fa-solid fa-angle-left" style="position: absolute;left:4%;top: 40%;"
+                                            *ngIf="isArabic()"></i>
+                                    </a>
                                 </li>
 
                             </ul>

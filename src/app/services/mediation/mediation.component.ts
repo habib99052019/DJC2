@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './mediation.component.css'
 })
 export class MediationComponent {
-
+  isArabic() {
+    if (localStorage.getItem("language") === "ar") {
+      return true
+    }
+    return false
+  }
 }

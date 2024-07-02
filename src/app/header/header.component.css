@@ -45,3 +45,27 @@
 .logo{
     scale: 1.4 !important;
 }
+
+.select-nvbr{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .select-nvbr{
+
+        display: block;
+        position: absolute;
+        width: 40%;
+        padding: 2% 0;
+        background-color: white;
+        border: .1vw solid gray;
+        border-radius: 0.4vw;
+        font-size: 4vw;
+        border-radius: 1vw;
+        right: 18%;
+        margin-top: 2.7%;
+    
+    }
+}
