@@ -228,16 +228,20 @@
   display: none;
 }
 
-#aboutMobile{
+#aboutMobile,
+#mobileSection {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
 
-  #aboutMobile{
+  #aboutMobile,
+  #mobileSection {
     display: flex;
   }
-  #aboutDesktop{
+
+  #aboutDesktop,
+  #desktopSection {
     display: none;
   }
 

@@ -27,7 +27,7 @@
 <section class="service-single" id="desktopService">
     <div class="container">
         <div class="row">
-            <div class="col-xl-8 mt-5 mt-xl-0 pq-grey-bg" *ngIf="isArabic()">
+            <div class="col-xl-8 mt-5 mt-xl-0 pq-grey-bg" *ngIf="isArabic()" [ngStyle]="{'textAlign':isArabic() ? 'right':'left'}">
                 <h3 class="pq-service-single-title">{{'Tips'|translate}}</h3>
                 <p class="pq-mb-45">{{'P tips'|translate}}</p>
                 <div class="img">
@@ -166,7 +166,7 @@
 
                 </div>
             </div>
-            <div class="col-xl-8 mt-5 mt-xl-0 pq-grey-bg">
+            <div class="col-xl-8 mt-5 mt-xl-0 pq-grey-bg" [ngStyle]="{'textAlign':isArabic() ? 'right':'left'}">
                 <h3 class="pq-service-single-title">{{'Tips'|translate}}</h3>
                 <p class="pq-mb-45">{{'P tips'|translate}}</p>
                 <div class="img">

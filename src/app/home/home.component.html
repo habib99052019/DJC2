@@ -277,10 +277,10 @@
 <!-- secteur activite -->
 
 <!-- Service -->
-<section class="service">
+<section class="service" id="desktopSection">
   <div class="container">
     <div class="row">
-      <div class="col-xl-4">
+      <div class="col-xl-4" *ngIf="!isArabic()" >
         <div class="pq-section-title pq-style-1">
           <div class="pq-section-sub-title">
             <span class="left-sep"></span>
@@ -291,6 +291,135 @@
         </div>
       </div>
       <div class="col-xl-8 mt-5 mt-xl-0 pq-ps-60">
+        <div class="pq-service-box-6-list">
+          <div class="item">
+            <div class="pq-service-box pq-style-6">
+              <div class="pq-service-icon">
+                <i class="flaticon-030-advice"></i>
+              </div>
+              <div class="pq-service-box-title">
+                <h5 class="pq-service-title">{{'Studies'|translate}}</h5>
+              </div>
+              <p class="pq-service-description">{{'P studies'|translate}}
+              </p>
+              <div class="pq-btn-container">
+                <a class="pq-button pq-button-icon" routerLink="/services/studies">
+                  <div class="pq-button-block">
+                    <span class="pq-button-text"></span>
+                    <i class="pt-flaticon-right-arrow"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="pq-service-box pq-style-6">
+              <div class="pq-service-icon">
+                <i class="flaticon-009-jury"></i>
+              </div>
+              <div class="pq-service-box-title">
+                <h5 class="pq-service-title">{{'Tips'|translate}}</h5>
+              </div>
+              <p class="pq-service-description">{{'P tips'|translate}}
+              </p>
+              <div class="pq-btn-container">
+                <a class="pq-button pq-button-icon" routerLink="/services/tips">
+                  <div class="pq-button-block">
+                    <span class="pq-button-text"></span>
+                    <i class="pt-flaticon-right-arrow"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="pq-service-box pq-style-6">
+              <div class="pq-service-icon">
+                <i class="flaticon-016-agreement"></i>
+              </div>
+              <div class="pq-service-box-title">
+                <h5 class="pq-service-title">{{'Accompanying'|translate}}</h5>
+              </div>
+              <p class="pq-service-description">{{'P Accompanying'|translate}}</p>
+              <div class="pq-btn-container">
+                <a class="pq-button pq-button-icon" routerLink="/services/accompanying">
+                  <div class="pq-button-block">
+                    <span class="pq-button-text"></span>
+                    <i class="pt-flaticon-right-arrow"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="pq-service-box pq-style-6">
+              <div class="pq-service-icon">
+                <i class="flaticon-021-gavel"></i>
+              </div>
+              <div class="pq-service-box-title">
+                <h5 class="pq-service-title">{{'Mediation'|translate}}</h5>
+              </div>
+              <p class="pq-service-description">{{'P mediation'|translate}}</p>
+              <div class="pq-btn-container">
+                <a class="pq-button pq-button-icon" routerLink="/services/mediation">
+                  <div class="pq-button-block">
+                    <span class="pq-button-text"></span>
+                    <i class="pt-flaticon-right-arrow"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="pq-service-box pq-style-6">
+              <div class="pq-service-icon">
+                <i class="flaticon-007-lawyer"></i>
+              </div>
+              <div class="pq-service-box-title">
+                <h5 class="pq-service-title">{{'Arbitration'|translate}}</h5>
+              </div>
+              <p class="pq-service-description">{{'P arbitration'|translate}}</p>
+              <div class="pq-btn-container">
+                <a class="pq-button pq-button-icon" routerLink="/services/arbitration">
+                  <div class="pq-button-block">
+                    <span class="pq-button-text"></span>
+                    <i class="pt-flaticon-right-arrow"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4" *ngIf="isArabic()" >
+        <div class="pq-section-title pq-style-1" style="text-align: right;">
+          <div class="pq-section-sub-title">
+            <span class="left-sep"></span>
+            {{'services'|translate}}
+            <span class="right-sep"></span>
+          </div>
+          <h5 class="pq-section-main-title">{{'services'|translate}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="service" id="mobileSection">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4" [ngStyle]="{'textAlign':isArabic() ? 'right':'left'}">
+        <div class="pq-section-title pq-style-1">
+          <div class="pq-section-sub-title">
+            <span class="left-sep"></span>
+            {{'services'|translate}}
+            <span class="right-sep"></span>
+          </div>
+          <h5 class="pq-section-main-title">{{'services'|translate}}</h5>
+        </div>
+      </div>
+      <div class="col-xl-8 mt-5 mt-xl-0 pq-ps-60" [ngStyle]="{'textAlign':isArabic() ? 'right':'left'}">
         <div class="pq-service-box-6-list">
           <div class="item">
             <div class="pq-service-box pq-style-6">
